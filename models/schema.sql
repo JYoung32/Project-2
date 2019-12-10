@@ -1,3 +1,12 @@
 DROP DATABASE IF EXISTS project2db;
 CREATE DATABASE project2db;
 
+CREATE TABLE freelancers {
+    id INTEGER(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(250) NOT NULL,
+    position VARCHAR(250) NOT NULL,
+    rate INTERGER(11) NOT NULL,
+    email VARCHAR(250) NOT NULL,
+    location VARCHAR(250) NOT NULL,
+    PRIMARY KEY(id)
+};
