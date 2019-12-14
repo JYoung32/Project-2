@@ -1,4 +1,4 @@
-<div class="jumbotron text-center">
+<div class="jumbotron text-center back">
     <h1 class="display-4">Freelancers!</h1>
     <hr class="my-4">
     <table class="table">
@@ -13,14 +13,16 @@
             </tr>
         </thead>
         <tbody>
+            {{#each freelancers}}
             <tr>
-                <th scope="row">1</th>
-                <td>name</td>
-                <td>position</td>
-                <td>location</td>
-                <td>rate</td>
-                <td>email address</td>
+                <th scope="row">{{this.id}}</th>
+                <td>{{this.name}}</td>
+                <td>{{this.position}}</td>
+                <td>{{this.location}}</td>
+                <td>{{this.rate}}</td>
+                <td>{{this.email}}</td>
             </tr>
+            {{/each}}
         </tbody>
     </table>
 </div>
