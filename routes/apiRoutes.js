@@ -5,6 +5,7 @@ module.exports = function(app) {
   app.get("/api/freelancers", function(req, res) {
     db.freelancer.findAll({}).then(function(freelancers) {
       res.json(freelancers);
+      console.log(res.json(freelancers));
     });
   });
 
