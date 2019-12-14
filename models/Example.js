@@ -34,4 +34,8 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
   return freelancer;
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> e7de9639fa5d438a992ada70345f33391d4c9795
