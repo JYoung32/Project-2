@@ -6,6 +6,11 @@ module.exports = function(app) {
     res.render("index");
   });
 
+  //load the table to display all freelancers
+  app.get("/table", function(req, res) {
+    res.render("table");
+  });
+
   //load the form when become-a-freelancer button is clicked
   app.get("/form", function(req, res) {
     res.render("form");
