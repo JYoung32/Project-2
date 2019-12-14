@@ -3,12 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.freelancer.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        freelancer: dbExamples
-      });
-    });
+    res.render("index");
   });
 
   //load the form when become-a-freelancer button is clicked
