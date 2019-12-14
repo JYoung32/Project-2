@@ -1,32 +1,32 @@
 var db = require("../models");
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Get all examples
-  app.get("/api/freelancers", function(req, res) {
-    db.freelancer.findAll({}).then(function(freelancers) {
+  app.get("/api/freelancers", function (req, res) {
+    db.freelancer.findAll({}).then(function (freelancers) {
       res.json(freelancers);
       console.log(res.json(freelancers));
     });
   });
 
-  app.get("/api/freelancers/position/:position", function(req, res) {
+  app.get("/api/freelancers/position/:position", function (req, res) {
     var searchPosition = req.params.position;
     db.freelancer.findAll({
       where: {
         position: searchPosition
       }
-    }).then(function(freelancers) {
+    }).then(function (freelancers) {
       res.json(freelancers);
     });
   });
 
-  app.get("/api/freelancers/location/:location", function(req, res) {
+  app.get("/api/freelancers/location/:location", function (req, res) {
     var searchLocation = req.params.location;
     db.freelancer.findAll({
       where: {
         location: searchLocation
       }
-    }).then(function(freelancers) {
+    }).then(function (freelancers) {
       res.json(freelancers);
     });
   });

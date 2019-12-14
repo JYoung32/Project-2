@@ -3,12 +3,17 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.freelancer.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        freelancer: dbExamples
-      });
-    });
+    res.render("index");
+  });
+
+  //load the table to display all freelancers
+  app.get("/table", function(req, res) {
+    res.render("table");
+  });
+
+  //load the form when become-a-freelancer button is clicked
+  app.get("/form", function(req, res) {
+    res.render("form");
   });
 
   // Load example page and pass in an example by id
