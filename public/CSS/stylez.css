@@ -1,0 +1,8 @@
+body {
+    background-image:  url("../images/stars.jpg");
+}
+
+.back{
+  background-color:rgba(255,255,255, .7);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
