@@ -8,7 +8,12 @@ module.exports = function(app) {
 
   //load the table to display all freelancers
   app.get("/table", function(req, res) {
-    res.render("table");
+    //go to sql, get list of freelancers
+    db.freelancer.findAll({}).then(function(freelancers) {
+      res.render("table", {
+        freelancers: freelancers
+      });
+    });
   });
 
   //load the form when become-a-freelancer button is clicked
