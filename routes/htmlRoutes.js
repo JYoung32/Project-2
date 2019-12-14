@@ -4,25 +4,20 @@ module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
     res.render("index");
-  });
 
   //load the table to display all freelancers
   app.get("/table", function(req, res) {
-    res.render("table");
+    //go to sql, get list of freelancers
+    db.freelancer.findAll({}).then(function(freelancers) {
+      res.render("table", {
+        freelancers: freelancers
+      });
+    });
   });
 
   //load the form when become-a-freelancer button is clicked
   app.get("/form", function(req, res) {
     res.render("form");
-  });
-
-  // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.render("example", {
-        example: dbExample
-      });
-    });
   });
 
   // Render 404 page for any unmatched routes
