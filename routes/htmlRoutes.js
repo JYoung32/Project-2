@@ -4,7 +4,6 @@ module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
     res.render("index");
-  });
 
   //load the table to display all freelancers
   app.get("/table", function(req, res) {
