@@ -4,6 +4,9 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
+        notNull: {
+          msg: "Please enter your name."
+        },
         len: [1]
       }
     },
@@ -11,17 +14,30 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
+        notNull: {
+          msg: "Please enter your position."
+        },
         len: [1]
       }
     },
     rate: {
-      type: DataTypes.INTEGER,
-      allowNull: false
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false,
+      validate: {
+        isDecimal: true,
+        notNull: {
+          msg: "Please enter your rate."
+        }
+      }
     },
     email: {
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
+        isEmail: true,
+        notNull: {
+          msg: "Please enter your email."
+        },
         len: [1]
       }
     },
@@ -29,6 +45,9 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
+        notNull: {
+          msg: "Please pick your state."
+        },
         len: [1]
       }
     }
