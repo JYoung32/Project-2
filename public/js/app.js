@@ -7,7 +7,7 @@ var handleFormSubmit = function(event) {
     //Pulling info from form page
     var newFreelancer = {
         name: $("#nameInput").val().trim(),
-        location: $("#locationInput").val().trim(),
+        location: $("#stateInput").val().trim(),
         position: $("#positionInput").val().trim(),
         rate: $("#rateInput").val().trim(),
         email: $("#emailInput").val().trim()
@@ -17,10 +17,10 @@ var handleFormSubmit = function(event) {
     console.log(newFreelancer);
 
     //Post route to DB
+    // $.post("/api/freelancers", newFreelancer, function (req, res))
 
     //Clear the form after button is clicked
     $("#nameInput, #locationInput, #positionInput, #rateInput, #emailInput").val("");
-
 
 };
 
