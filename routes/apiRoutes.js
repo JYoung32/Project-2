@@ -39,8 +39,8 @@ module.exports = function (app) {
 
   // Create a new example
   app.post("/api/freelancers", function (req, res) {
-    db.Example.create(req.body).then(function (dbExample) {
-      res.json(dbExample);
+    db.freelancer.create(req.body).then(function (freelancers) {
+      res.json(freelancers);
     });
   });
 
