@@ -1,13 +1,24 @@
 <div class="jumbotron text-center back">
     <h1 class="display-4">Freelancers!</h1>
+    {{!-- <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Search by</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" id="searchPosition" href="/api/freelancers/position/:position">Position/Trade</a>
+                <a class="dropdown-item" id="searchLocation" href="/api/freelancers/location/:location">State</a>
+            </div>
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+    </div> --}}
     <hr class="my-4">
-    <table class="table">
+    <table class="table table-hover">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Freelancer</th>
                 <th scope="col">Name</th>
                 <th scope="col">Position/Trade</th>
-                <th scope="col">Location</th>
+                <th scope="col">State</th>
                 <th scope="col">Rate/Hr</th>
                 <th scope="col">Email Address</th>
             </tr>
