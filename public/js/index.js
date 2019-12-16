@@ -1,7 +1,7 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
+var $submitBtn = $("#submitFreelancer");
 var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
@@ -64,17 +64,27 @@ var refreshExamples = function() {
 var handleFormSubmit = function(event) {
   event.preventDefault();
 
-  var example = {
-    text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim()
-  };
-
-  if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
+  var newFreelancer = {
+    name: $("#nameInput").val().trim(),
+    location: $("#stateInput").val().trim(),
+    position: $("#positionInput").val().trim(),
+    rate: $("#rateInput").val().trim(),
+    email: $("#emailInput").val().trim()
+};
+  if (
+    !(
+      newFreelancer.name &&
+      newFreelancer.location &&
+      newFreelancer.position &&
+      newFreelancer.rate &&
+      newFreelancer.email
+    )
+  ) {
+    alert("You must enter a valid form!");
     return;
   }
 
-  API.saveExample(example).then(function() {
+  API.saveExample(newFreelancer).then(function() {
     refreshExamples();
   });
 
