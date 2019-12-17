@@ -31,13 +31,7 @@ module.exports = function (app) {
     });
   });
 
-  //Create a new freelancer
-  // app.post("/api/freelancers", function (req, res) 
-  // {
-  //   console.log(req.body);
-  // })
-
-  // Create a new example
+  // Create a new freelancer
   app.post("/api/freelancers", function (req, res) {
     db.freelancer.create(req.body).then(function (freelancers) {
       res.json(freelancers);
