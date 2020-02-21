@@ -1,45 +1,70 @@
-# Project-2
+# Freelancers
 
-REMOTE LINK -
+---- 
 
-https://obscure-savannah-83730.herokuapp.com/
+ ## Table of contents
+* [What is this?](#what-is-this)
+* [Technologies](#technologies)
+* [Files Included](#files-included)
+* [Functionality](#functionality)
+* [Upcomming Changes](#upcomming-changes)
+* [Contributors](#contributors)
 
-# Contributors
+----
 
-Joe Young
-Moutaz Abdelhamid
-Steven Cain
-Kait Giovinazzo
+### Freelancers connects you to local expertise to get your job done, whatever it may be - contractor, electrician, tattoo artist, painter - you name it.  
 
-# Libraries & Technologies Used
+----
 
-Animate.CSS
-Node.js
-.env 
-Express to handle the servers
-Express handlebars for template engine
-MYSQL for database
-Sequelize for our ORM
-HTML
-CSS
+## Deployed Page
+[Freelancers Heroku Deployed Page](https://obscure-savannah-83730.herokuapp.com/)
+![](example-gif.gif)
 
-# Functionality 
+----
 
-Freelancers connects you to local expertise to get your job done, whatever it may be - contractor, electrician, tattoo artist, painter - you name it. 
+## Technologies Used
 
-You can also enter your own information to add yourself as a freelancer should you be someone looking for extra funds. 
+* HTML  
+* CSS  
+* Animate.CSS  
+* Node.js  
+* Express  
+* Express Handlebars  
+* MySQL  
+* Sequelize  
 
-# Why is Freelancers useful?
+----
 
-Sometimes you want to support your local businesses or individuals, but don't know where to find them. Freelancers is your one stop application to search your local vendors for a service of your choice - you name it, we got the skills. 
+## Installation
 
-# How can users get started with Freelancers?
+Using Node.js cd into the root directory and install the require packages to get started
 
-Start up your terminal
-NPM install
-NPM start
+```
+npm install  
+npm start  
+```
 
-# Who maintains and contributes to the project
+----
 
-Joe, Steve, Moutaz, Kait 
+## Functionality
 
+Freelancers is a web application that will help the user to locate a local expert to get a task that a user need done. In addition to being able to add an expert to our database to be contacted in the furture by any potential client.
+    
+----
+
+## Upcomming Changes
+
+* Adding a user login and authentication  
+* Adding in categories for trades  
+* Adding a search bar to search freelancers  
+
+----
+
+## Contributors
+
+* [@JYoung32](https://github.com/JYoung32)  
+* [@Mizo10](https://github.com/Mizo10)  
+* [@stevencainn](https://github.com/stevencainn)  
+* [@KGiovinazzo](https://github.com/KGiovinazzo)  
+
+----
