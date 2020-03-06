@@ -1,9 +1,5 @@
 # Freelancers
 
-![GIF example](./public/images/freelancers-example.gif)
-
-REMOTE LINK -
-
  ## Table of contents
 * [What is this?](#what-is-this)
 * [Technologies](#technologies)
@@ -20,7 +16,7 @@ REMOTE LINK -
 
 ## Deployed Page
 [Freelancers Heroku Deployed Page](https://obscure-savannah-83730.herokuapp.com/)
-![](example-gif.gif)
+![GIF example](./public/images/freelancers-example.gif)
 
 ----
 
