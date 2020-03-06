@@ -1,5 +1,7 @@
 # Project-2
 
+![GIF example](./public/images/freelancers-example.gif)
+
 REMOTE LINK -
 
 https://obscure-savannah-83730.herokuapp.com/
