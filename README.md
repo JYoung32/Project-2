@@ -1,6 +1,8 @@
 # Freelancers
 
----- 
+![GIF example](./public/images/freelancers-example.gif)
+
+REMOTE LINK -
 
  ## Table of contents
 * [What is this?](#what-is-this)
